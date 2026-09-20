@@ -95,14 +95,14 @@
     outline: none;
     background-color: transparent;
     color: #ffffff;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     transition: border-color var(--transition-dur-and-func);
 }
 
 .footer-input::placeholder {
-    color: #f4f4fd;
+    color: #ffffff;
     opacity: 1;
 }
 
@@ -114,9 +114,8 @@
     box-shadow: 0 0 0 1000px #2e2f42 inset;
 }
 
-.footer-input:hover,
 .footer-input:focus {
-    border-color: #4d5ae5;
+    border-color: #31d0aa;
 }
 
 .footer-submit {
@@ -142,5 +141,5 @@
 
 .footer-submit:hover,
 .footer-submit:focus {
-    background-color: #404bbf;
+    background-color: #31d0aa;
 }

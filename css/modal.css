@@ -56,21 +56,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     padding: 0;
-    border: none;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 50%;
     background-color: #e7e9fc;
     color: #2e2f42;
     cursor: pointer;
     transition:
         background-color var(--transition-dur-and-func),
+        border-color var(--transition-dur-and-func),
         color var(--transition-dur-and-func);
 }
 
 .modal-close:hover,
 .modal-close:focus {
+    border-color: #404bbf;
     background-color: #404bbf;
     color: #ffffff;
 }
@@ -123,7 +125,7 @@
 
 .modal-input {
     height: 40px;
-    padding: 8px 16px 8px 42px;
+    padding: 8px 16px 8px 38px;
 }
 
 /* Іконка всередині інпута — по центру по вертикалі */
@@ -137,14 +139,16 @@
     transition: color var(--transition-dur-and-func);
 }
 
-.modal-input:hover,
+/* Стани за макетом: фокус і заповнене поле (плейсхолдер не показується) */
 .modal-input:focus,
-.modal-textarea:hover,
-.modal-textarea:focus {
+.modal-input:not(:placeholder-shown),
+.modal-textarea:focus,
+.modal-textarea:not(:placeholder-shown) {
     border-color: #4d5ae5;
 }
 
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus + .modal-input-icon,
+.modal-input:not(:placeholder-shown) + .modal-input-icon {
     color: #4d5ae5;
 }
 
@@ -153,6 +157,8 @@
     display: block;
     height: 120px;
     padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1.17;
     resize: none;
 }
 
