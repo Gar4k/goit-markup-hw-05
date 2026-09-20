@@ -116,23 +116,23 @@
     border-radius: 4px;
     outline: none;
     background-color: transparent;
-    color: #2e2f42;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.04em;
     transition: border-color var(--transition-dur-and-func);
 }
 
 .modal-input {
     height: 40px;
     padding: 8px 16px 8px 38px;
+    color: #2e2f42;
+    letter-spacing: 0.02em;
 }
 
 /* Іконка всередині інпута — по центру по вертикалі */
 .modal-input-icon {
     position: absolute;
     top: 50%;
-    left: 18px;
+    left: 16px;
     transform: translateY(-50%);
     color: #2e2f42;
     pointer-events: none;
@@ -157,8 +157,10 @@
     display: block;
     height: 120px;
     padding: 8px 16px;
+    color: #434455;
     font-size: 12px;
     line-height: 1.17;
+    letter-spacing: 0.04em;
     resize: none;
 }
 
@@ -193,7 +195,7 @@
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     background-color: transparent;
-    color: #ffffff;
+    color: #f4f4fd;
     transition:
         background-color var(--transition-dur-and-func),
         border-color var(--transition-dur-and-func);
